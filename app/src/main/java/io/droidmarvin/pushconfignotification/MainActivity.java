@@ -25,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
                 new FirebaseRemoteConfigSettings.Builder()
                         .setDeveloperModeEnabled(true)
                         .build() );
+
+        applyConfig();
     }
 
     private void applyConfig() {
