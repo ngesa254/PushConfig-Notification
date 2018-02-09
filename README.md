@@ -1,17 +1,20 @@
 # PushConfig-Notification
 Firebase Push Notification and Remote Config for Android
 
+Images
+------
+
+<img src="Images/fb.png" alt="phone image" width="200px" />
+
 Push Notification
 ------------------
 This is a brief message or alert that pops up on a mobile device.
 In other words, a message sent through an installed app to everyone who has installed the same app. 
 
-Images
-------
 
-<img src="Images/pa.png" alt="phone image" width="200px" />
+<img src="Images/fba.png" alt="phone image" width="200px" />
 
-<img src="Images/pb.png" alt="phone image" width="200px" />
+<img src="Images/fbb.png" alt="phone image" width="200px" />
 
 Remote Config
 -------------
