@@ -31,7 +31,12 @@ public class MainActivity extends AppCompatActivity {
                         .setDeveloperModeEnabled(true)
                         .build() );
 
+
+        //To apply parameters to the user interface and
+        //Handling changes at Startup
+        firebaseRemoteConfig.activateFetched();
         applyConfig();
+        firebaseRemoteConfig.fetch(0);
     }
 
     private void applyConfig() {
