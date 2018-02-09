@@ -12,5 +12,5 @@ The major benefit of Remote Config is delivering the right look and feel remotel
 
 Resources
 -----------
-[Firebase](https://firebase.google.com/)
-[Firebase Codelab](https://codelabs.developers.google.com/codelabs/firebase-android/index.html?index=..%2F..%2Findex#0)
+- [Firebase](https://firebase.google.com/)
+- [Firebase Codelab](https://codelabs.developers.google.com/codelabs/firebase-android/index.html?index=..%2F..%2Findex#0)
