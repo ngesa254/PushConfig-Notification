@@ -41,8 +41,8 @@ public class MainActivity extends AppCompatActivity {
 
     private void applyConfig() {
         //Get the widget from XML layout
-        ConstraintLayout layout = (ConstraintLayout) findViewById(R.id.layout);
-        TextView textview = (TextView) findViewById(R.id.textView);
+        ConstraintLayout layout = findViewById(R.id.layout);
+        TextView textview =  findViewById(R.id.textView);
 
         //Get the values form Firebase remote configuration
         String welcomeText = firebaseRemoteConfig.getString("welcome_text");
