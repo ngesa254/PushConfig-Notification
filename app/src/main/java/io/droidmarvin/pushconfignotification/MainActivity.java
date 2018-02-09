@@ -1,11 +1,14 @@
 package io.droidmarvin.pushconfignotification;
 
 import android.graphics.Color;
+import android.support.annotation.NonNull;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfig;
 import com.google.firebase.remoteconfig.FirebaseRemoteConfigSettings;
 
@@ -45,5 +48,20 @@ public class MainActivity extends AppCompatActivity {
         textview.setText(welcomeText);
         textview.setTextColor(Color.parseColor(welcomeTextColor));
 
+    }
+
+    private void updateConfg() {
+        firebaseRemoteConfig.fetch(0).addOnCompleteListener(this,
+                new OnCompleteListener<Void>() {
+                    @Override
+                    public void onComplete(@NonNull Task<Void> task) {
+                        if(task.isSuccessful()) {
+                            firebaseRemoteConfig.activateFetched();
+                            applyConfig();
+                        } else {
+                            // Fetch failed
+                        }
+                    }
+                });
     }
 }
