@@ -4,7 +4,7 @@ Firebase Push Notification and Remote Config for Android
 Images
 ------
 
-<img src="Images/fb.jpg" alt="phone image" width="200px" />
+<img src="Images/fb.JPG" alt="phone image" width="200px" />
 
 Push Notification
 ------------------
